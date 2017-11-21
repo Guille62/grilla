@@ -1,0 +1,133 @@
+body, html{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background: #eee;
+	font-family: sans-serif;
+	color: #333;
+	font-size: 0.7em;
+}
+h2{ text-align: center; }
+
+.fila{
+	width: 90%;
+	margin: 2% auto;
+	overflow: hidden;
+}
+.columna{
+	background: lightblue;
+	float: left;
+	box-sizing: border-box;
+	margin-right: 2%;
+	padding: 1em;	
+	width: 100%;	
+}
+
+/* RESPONSIVE */
+
+/*SMALL*/
+
+@media (min-width: 480px) {
+	.cuatro-columnas .columna,
+	.seis-columnas .columna{
+		width: 49%;
+	}
+	.cuatro-columnas .columna:nth-child(2n),
+	.seis-columnas .columna:nth-child(2n){
+		margin-right: 0px;
+	}
+
+	.doce-columnas .columna{
+		width: 32%;
+	}
+	.doce-columnas .columna:nth-child(3n){
+		margin-right: 0px;
+	}
+}
+/*MEDIO*/
+
+@media (min-width: 768px) {
+
+/*RIGHT SIDEBAR & LEFT SIDEBAR */
+	.right-sidebar .sidebar,
+	.left-sidebar .sidebar{
+		width: 23.5%;
+	}
+	.right-sidebar .content,
+	.left-sidebar .content{
+		width: 74.5%;
+	}
+	.right-sidebar .sidebar{
+		margin-right: 0px;
+	}
+
+	.left-sidebar .content{
+		margin-right: 0px;
+	}
+/* TRES COLUMNAS */
+	.tres-columnas .columna{
+		width: 32%;
+	}
+	.tres-columnas .columna:nth-child(3n){
+		margin-right: 0px;
+	}
+/*SEIS COLUMNAS */
+	.seis-columnas .columna{
+		width: 15%;
+	}
+	.seis-columnas .columna:nth-child(2n){
+		margin-right: 2%;
+	}
+	.seis-columnas .columna:nth-child(6n){
+		margin-right: 0px;
+	}
+/*DOCE COLUMNAS */
+	.doce-columnas .columna{
+		width: 23.5%;
+	}
+	.doce-columnas .columna:nth-child(3n){
+		margin-right: 2%;
+	}
+	.doce-columnas .columna:nth-child(4n){
+		margin-right: 0px;
+	}
+
+}
+
+/*LARGE*/
+
+@media (min-width: 1024px) {
+
+/* DOS COLUMNAS */
+	.dos-columnas .columna{
+	width: 49%;
+	}
+	.dos-columnas .columna:nth-child(2n){
+		margin-right: 0px;
+	}
+
+/*CUATRO COLUMNAS */
+	.cuatro-columnas .columna{
+		width: 23.5%;
+	}
+	.cuatro-columnas .columna:nth-child(2n){
+		margin-right: 2%;
+	}
+	.cuatro-columnas .columna:nth-child(4n){
+		margin-right: 0px;
+	}
+
+/*DOCE COLUMNAS */
+	.doce-columnas .columna{
+		width: 6.5%;
+	}
+	.doce-columnas .columna:nth-child(4n){
+		margin-right: 2%;
+	}
+	.doce-columnas .columna:nth-child(12n){
+		margin-right: 0px;
+	}
+
+}
